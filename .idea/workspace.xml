@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6dbe983-bad0-47f0-a872-57e596740e0d" name="Changes" comment="Pointcuts and Wildcard Expressions">
+    <list default="true" id="d6dbe983-bad0-47f0-a872-57e596740e0d" name="Changes" comment="JoinPoints and Advice Arguments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AopMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AopMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/aspects/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/aspects/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665633438278</updated>
       <workItem from="1665633439904" duration="5004000" />
-      <workItem from="1665721791898" duration="859000" />
+      <workItem from="1665721791898" duration="3221000" />
     </task>
     <task id="LOCAL-00001" summary="My first Aspect">
       <created>1665635571856</created>
@@ -91,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665636579377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="JoinPoints and Advice Arguments">
+      <created>1665722684561</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665722684561</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="My first Aspect" />
     <MESSAGE value="Pointcuts and Wildcard Expressions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pointcuts and Wildcard Expressions" />
+    <MESSAGE value="JoinPoints and Advice Arguments" />
+    <option name="LAST_COMMIT_MESSAGE" value="JoinPoints and Advice Arguments" />
   </component>
 </project>

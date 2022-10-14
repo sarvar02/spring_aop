@@ -9,5 +9,13 @@ public class Circle {
 
     public void setName(String name) {
         this.name = name;
+        System.out.println("Circle's setter called");
+        throw(new RuntimeException("Exception !!!"));
+    }
+
+    public String setNameAndReturn(String name) {
+        this.name = name;
+        System.out.println("Circle's setter called");
+        return name;
     }
 }

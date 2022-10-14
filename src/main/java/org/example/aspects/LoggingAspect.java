@@ -1,9 +1,7 @@
 package org.example.aspects;
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.example.model.Circle;
 
 @Aspect
@@ -22,9 +20,15 @@ public class LoggingAspect {
 //        System.out.println("A method that takes String arguments has been called");
 //    }
 
-    @Before("args(name)")
-    public void stringArgumentMethods(String name){
+    @AfterReturning(pointcut = "args(name)", returning = "returnString")
+    public void stringArgumentMethods(String name, String returnString){
         System.out.println("A method that takes String arguments has been called. The value is " + name);
+        System.out.println("The returned value is " + returnString);
+    }
+
+    @AfterThrowing(pointcut = "args(name)", throwing = "ex")
+    public void exceptionAdvice(String name, RuntimeException ex){
+        System.out.println("An exception has been thrown: " + ex);
     }
 
     @Before("allCircleMethods()")
