@@ -1,6 +1,7 @@
 package org.example.aspects;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.example.model.Circle;
 
@@ -35,8 +36,24 @@ public class LoggingAspect {
     public void loggingAdvice(JoinPoint joinPoint){
         // getTarget() returns the current object
         // Circle circle = (Circle) joinPoint.getTarget();
-
     }
 
+    @Around("allGetters()")
+    public Object myAroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
+        Object resObject = null;
+        try {
+            System.out.println("Before advice");
+            resObject = proceedingJoinPoint.proceed(); // executes the actual method
+            System.out.println("After Returning");
+        } catch (Throwable e) {
+            System.out.println("After Throwing");
+        }
+        System.out.println("After Finally");
+        System.out.println("Current Object: " +resObject);
+
+        // Agar objectni qaytarib yubormasak NullPointer Exception bo'lishi mumkin
+        // Shu sababli proceedingJoinPoint.proceed() ni return qilib qo'ydik !!!
+        return resObject;
+    }
 
 }
