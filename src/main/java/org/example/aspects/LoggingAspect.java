@@ -9,12 +9,6 @@ import org.example.model.Circle;
 public class LoggingAspect {
 
 
-    @Pointcut("execution(* get*())")
-    public void allGetters(){};
-
-    @Pointcut("within(org.example.model.Circle)")
-    public void allCircleMethods(){};
-
 
 //    @Before("args(String)")
 //    public void stringArgumentMethods(){
@@ -38,7 +32,8 @@ public class LoggingAspect {
         // Circle circle = (Circle) joinPoint.getTarget();
     }
 
-    @Around("allGetters()")
+    // Custom Loggable annotatsiyasi qo'yilgan metodlar uchun PointCut Expression
+    @Around("@annotation(org.example.aspects.Loggable)")
     public Object myAroundAdvice(ProceedingJoinPoint proceedingJoinPoint){
         Object resObject = null;
         try {
@@ -49,11 +44,21 @@ public class LoggingAspect {
             System.out.println("After Throwing");
         }
         System.out.println("After Finally");
-        System.out.println("Current Object: " +resObject);
 
         // Agar objectni qaytarib yubormasak NullPointer Exception bo'lishi mumkin
         // Shu sababli proceedingJoinPoint.proceed() ni return qilib qo'ydik !!!
         return resObject;
     }
+
+
+    @Pointcut("execution(* get*())")
+    public void allGetters(){};
+
+    @Pointcut("within(org.example.model.Circle)")
+    public void allCircleMethods(){};
+
+    // Barcha service classlari uchun PointCut Expression
+//    @Pointcut("execution(* org.example.service.*Service.*(..))")
+
 
 }

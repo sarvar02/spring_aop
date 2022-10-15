@@ -1,5 +1,6 @@
 package org.example.service;
 
+import org.example.aspects.Loggable;
 import org.example.model.Circle;
 import org.example.model.Triangle;
 
@@ -8,6 +9,7 @@ public class ShapeService {
     private Circle circle;
     private Triangle triangle;
 
+    @Loggable
     public Circle getCircle() {
         return circle;
     }

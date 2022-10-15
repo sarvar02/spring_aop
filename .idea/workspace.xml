@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6dbe983-bad0-47f0-a872-57e596740e0d" name="Changes" comment="After Advice Types">
+    <list default="true" id="d6dbe983-bad0-47f0-a872-57e596740e0d" name="Changes" comment="Around Advice Types">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/aspects/Loggable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AopMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AopMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/aspects/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/aspects/LoggingAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/ShapeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ShapeService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,8 @@
       <updated>1665633438278</updated>
       <workItem from="1665633439904" duration="5004000" />
       <workItem from="1665721791898" duration="4209000" />
-      <workItem from="1665764781235" duration="1290000" />
+      <workItem from="1665764781235" duration="1910000" />
+      <workItem from="1665808627273" duration="1020000" />
     </task>
     <task id="LOCAL-00001" summary="My first Aspect">
       <created>1665635571856</created>
@@ -107,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665725920807</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Around Advice Types">
+      <created>1665766092285</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665766092285</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +139,7 @@
     <MESSAGE value="Pointcuts and Wildcard Expressions" />
     <MESSAGE value="JoinPoints and Advice Arguments" />
     <MESSAGE value="After Advice Types" />
-    <option name="LAST_COMMIT_MESSAGE" value="After Advice Types" />
+    <MESSAGE value="Around Advice Types" />
+    <option name="LAST_COMMIT_MESSAGE" value="Around Advice Types" />
   </component>
 </project>

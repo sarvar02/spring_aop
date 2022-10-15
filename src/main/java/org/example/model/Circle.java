@@ -1,5 +1,7 @@
 package org.example.model;
 
+import org.example.aspects.Loggable;
+
 public class Circle {
     private String name;
 
