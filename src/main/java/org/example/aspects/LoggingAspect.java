@@ -50,6 +50,9 @@ public class LoggingAspect {
         return resObject;
     }
 
+    public void loggingAdvice(){
+        System.out.println("Logging Advice !!!");
+    }
 
     @Pointcut("execution(* get*())")
     public void allGetters(){};
